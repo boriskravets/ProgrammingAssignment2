@@ -1,7 +1,7 @@
 ## My functions do almost the same thing as sample functions in the Assignment do.
 ## Difference is using matrix instead of the vector and 'solve()' instead of 'mean()'
 
-## Write a short comment describing this function
+## Write a short comment describing this function (blah)
 
 makeCacheMatrix <- function(x = matrix()) {
 
