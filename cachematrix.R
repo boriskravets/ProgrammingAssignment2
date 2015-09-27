@@ -1,5 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
+## My functions do almost the same thing as sample functions in the Assignment do.
+## Difference is using matrix instead of the vector and 'solve()' instead of 'mean()'
 
 ## Write a short comment describing this function
 
