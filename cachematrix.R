@@ -10,7 +10,7 @@
 #(4) get_inv retrieves Inverse from there
 
 makeCacheMatrix <- function(x = matrix()) {
-  inv = NULL #inv for "Inverse"
+  inv <- NULL #inv for "Inverse"
   set_val <-  function(y) {
     x <<- y #make x (in main function's environment) equal to set_val's argument
     inv <<- NULL #Inverse of the matrix is not calculated
@@ -20,7 +20,6 @@ makeCacheMatrix <- function(x = matrix()) {
   get_inv <-  function() inv #again just return value
   list(set_val = set_val, get_val = get_val, set_inv = set_inv, get_inv =get_inv) #return
 }
-
 
 
 #This function first checks (with get_inv) whether the Inverse for the matrix is already 
@@ -35,8 +34,8 @@ cacheSolve <- function(x, ...) {
     message('getting cached data')
     return(inv) #if condition is met, it ends execution (=> else not needed)
   }
-  data <- x$get_val #Inverse not computed => recompute => load the matrix
-  inv = solve(data, ...) #compute the Inverse of a loaded matrix 
+  data <- x$get_val() #Inverse not computed => recompute => load the matrix
+  inv <- solve(data) #compute the Inverse of a loaded matrix 
   x$set_val(inv) #cache computed Inverse, i.e. write it for further usage
   inv #return
 }
