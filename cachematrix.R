@@ -13,7 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL #inv for "Inverse"
   set_val <-  function(y) {
     x <<- y #make x (in main function's environment) equal to set_val's argument
-    inv <<- NULL #Inverse of the matrix is not calculated
+    inv <<- NULL #setting new value => reset the NULL value of Inverse
   }
   get_val <- function() x #no arguments, just return value
   set_inv <-  function(inverse) inv <<- inverse #store value of Inverse in 'inv' variable
