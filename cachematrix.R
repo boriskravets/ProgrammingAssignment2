@@ -4,7 +4,7 @@
 
 #This function creates a special "matrix" object that can cache its inverse; object is
 #a list of four functions:
-#(1) set_val specifies value of matrix stored in the main function
+#(1) set_val specifies value of matrix stored in the main function (is it essential?)
 #(2) get_val returns the value of matrix stored in the main function
 #(3) set_inv stores (not calculates) value of matrix's Inverse in main function
 #(4) get_inv retrieves Inverse from there
